@@ -67,9 +67,9 @@ subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)'
 
 subMenuEl.classList.add('flex-around')
 
-let topMenuLinks = document.getElementsByName('menuLinks')
+let topMenuLinks = topMenuEl.querySelectorAll('a')
 
-topMenuEl.addEventListener("click" , function (){
-    preventDefault()
-} )
+topMenuEl.addEventListener("click" , (event) => {
+    event.preventDefault()
+});
 
